@@ -1,0 +1,22 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "RPGWork",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianocamilo/RPGWork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianocamilo/RPGWork/issues"
+  },
+  "homepage": "https://github.com/julianocamilo/RPGWork#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
