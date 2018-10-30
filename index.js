@@ -7,11 +7,8 @@ bot.login(Utils.clientID());
 
 
 bot.on("message", message => {
-    if (Utils.isBotCommand(message.content)){
-          message.channel.send("oi me chamou?");
-    }
     const messageReturned = Commands.detect(message.content);
     if (messageReturned) {
-        message.channel.send(`${message.author},`, messageReturned);
+        message.channel.send(`${message.author} ${messageReturned}`);
     }
 })
