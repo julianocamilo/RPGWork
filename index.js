@@ -7,6 +7,10 @@ bot.login(Utils.clientID());
 
 bot.on("message", message => {
     if (Utils.isBotCommand(message.content)){
-          message.channel.send("oi me chamou?");
+          message.channel.sendMessage("oi me chamou?");
+    }
+    const messageReturned = Utils.detectCommand(message.content);
+    if (messageReturned) {
+        message.channel.send(messageReturned);
     }
 })
